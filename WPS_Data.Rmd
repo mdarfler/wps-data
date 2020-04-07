@@ -1,0 +1,22 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+library(Hmisc)
+```
+
+```{r}
+data <- read_csv("HQ_Post19_Clean.csv")
+for(i in seq(1:10)){
+  data[1] 
+}
+data$`Department Level 1` <- factor(data$`Department Level 1`)
+data$`Department Level 1` <- factor(data$`Department Level 1`)
+data$`Department Level 1` <- factor(data$`Department Level 1`)
+data$`Department Level 1` <- factor(data$`Department Level 1`)
+describe(data) 
+```
+
