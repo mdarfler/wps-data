@@ -10,7 +10,7 @@ library(ggcorrplot)
 ```
 
 ```{r}
-data <- read.csv("HQ_Post19_Clean.csv",stringsAsFactors = T)
+data <- read.csv("HQ_Post19_clean.csv",stringsAsFactors = T)
 data$What.aspects.of.the.Pier.4..space..are.your.favorite.and.what.could.we.work.to.improve. <- as.character(data$What.aspects.of.the.Pier.4..space..are.your.favorite.and.what.could.we.work.to.improve.)
 #describe(data) 
 ```
