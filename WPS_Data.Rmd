@@ -6,17 +6,19 @@ output: html_notebook
 ```{r}
 library(readr)
 library(Hmisc)
+library(ggcorrplot)
 ```
 
 ```{r}
-data <- read_csv("HQ_Post19_Clean.csv")
-for(i in seq(1:10)){
-  data[1] 
-}
-data$`Department Level 1` <- factor(data$`Department Level 1`)
-data$`Department Level 1` <- factor(data$`Department Level 1`)
-data$`Department Level 1` <- factor(data$`Department Level 1`)
-data$`Department Level 1` <- factor(data$`Department Level 1`)
-describe(data) 
+data <- read.csv("HQ_Post19_Clean.csv",stringsAsFactors = T)
+data$What.aspects.of.the.Pier.4..space..are.your.favorite.and.what.could.we.work.to.improve. <- as.character(data$What.aspects.of.the.Pier.4..space..are.your.favorite.and.what.could.we.work.to.improve.)
+#describe(data) 
+```
+
+```{r}
+hist(data$The.design.of.my.workplace.is.important.to.me)
+hist(data$Environmental.sustainability)
+hist(data$Informal.social.interaction)
+
 ```
 
